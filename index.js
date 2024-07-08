@@ -1,4 +1,8 @@
 import express from "express";
+import { dbConnection } from "./config/db.js";
+
+// connect to database
+dbConnection();
 
 const eventApp = express();
 
