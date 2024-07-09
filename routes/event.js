@@ -3,7 +3,7 @@ import { getEvent, getEvents,patchEvent,deleteEvent,postEvent,} from "../control
 import { remoteUpload } from "../middlewares/uploads.js";
 
 // create event router
-const eventRouter = Router();
+export const eventRouter = Router();
 
 // define routes
 eventRouter.post("/events", remoteUpload.single("banner"), postEvent);
