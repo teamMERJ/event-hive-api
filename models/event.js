@@ -3,8 +3,8 @@ import { toJSON } from "@reis/mongoose-to-json";
 
 const eventSchema = new Schema({
     name: {type: String, required:true},
-    description: {type: String, required:true},
-    collegeId: {type:Types.ObjectId, ref: 'College', required:true},
+    description: {type: String}, //, required:true
+    collegeId: {type:Types.ObjectId, ref: 'College'},//, required:true
     location: {type:String, required:true},
     date: {type:String, required:true},
     tags: {type:String},
