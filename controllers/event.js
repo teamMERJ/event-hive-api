@@ -35,7 +35,7 @@ export const getEvents = async (req, res, next) => {
     // return response
     res.status(200).json(event);
   } catch (error) {
-    next(error);
+    console.log(error);
   }
 };
 
@@ -50,7 +50,7 @@ export const postEvent = async (req, res, next) => {
     // return response
     res.status(201).json(addEvent);
   } catch (error) {
-    next(error);
+    console.log(error);
   }
 };
 

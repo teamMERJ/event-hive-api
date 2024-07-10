@@ -9,5 +9,5 @@ export const eventRouter = Router();
 eventRouter.post("/events", remoteUpload.single("banner"), postEvent);
 eventRouter.get("/events/:id", getEvent);
 eventRouter.get("/events", getEvents);
-eventRouter.patch("/events/:id", remoteUpload("banner"), patchEvent);
+eventRouter.patch("/events/:id", remoteUpload.single("banner"), patchEvent);
 eventRouter.delete("/events/id", deleteEvent);
